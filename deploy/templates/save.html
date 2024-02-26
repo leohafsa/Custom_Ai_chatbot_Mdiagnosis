@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Web Speech Recorder</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p>  
+        <label >Your text: </label>
+        <input type="text" id="textField" placeholder="Type something...">
+        <button id="startRecording">Start recording</button>
+        <button id="stopRecording" disabled>Stop recording</button>
+        
+    </p>
+
+<p class="output">
+<h6> Press stop recording and output will be displayed in a bit!</h6> 
+</p>    
+
+
+
+
+
+    <script>
+        navigator.mediaDevices.getUserMedia({ audio: true })
+            .then(stream => { handlerFunction(stream) });
+
+        function handlerFunction(stream) {
+            rec = new MediaRecorder(stream);
+            rec.ondataavailable = e => {
+                audioChunks.push(e.data);
+                if (rec.state == "inactive") {
+                    let blob = new Blob(audioChunks, { type: 'audio/mpeg-3' });
+                    sendData(blob);
+                }
+            }
+        }
+
+        function sendData(data) {
+            var form = new FormData();
+            form.append('file', data, 'data.mp3');
+            form.append('title', 'data.mp3');
+            // Chrome inspector shows that the post data includes a file and a title.
+            $.ajax({
+                type: 'POST',
+                url: '/save-record',
+                data: form,
+                cache: false,
+                processData: false,
+                contentType: false
+            })
+            .done(function (data) {
+              console.log(data);
+              $('.output').html(data);
+              //var textField = document.getElementById('textField');
+              //textField.placeholder = data;
+              //window.location.href = '/static/res.html';
+            })
+            .fail(function (jqXHR, textStatus, errorThrown) {
+                // Log any errors to the console for debugging
+                console.error("Error:", textStatus, errorThrown);
+            })
+        }
+    
+
+        document.getElementById('startRecording').onclick = e => {
+            console.log('Recording started.');
+            document.getElementById('startRecording').disabled = true;
+            document.getElementById('stopRecording').disabled = false;
+            audioChunks = [];
+            rec.start();
+        };
+
+        document.getElementById('stopRecording').onclick = e => {
+            console.log("Recording stopped.");
+            document.getElementById('startRecording').disabled = false;
+            document.getElementById('stopRecording').disabled = true;
+            rec.stop();
+        };
+
+    </script>
+</body>
+
+</html>

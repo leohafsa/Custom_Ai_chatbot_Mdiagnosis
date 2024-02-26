@@ -1,0 +1,97 @@
+"show my vitals":
+- Display my vitals.
+- What are my current health metrics?
+- Provide insights into my physiological data.
+- Illustrate my recent well-being indicators.
+- Share details about my health conditions.
+- Show the status of my vital signs.
+- Can you present a summary of my health?
+- Demonstrate my physiological measurements.
+- Give me an overview of my health trends.
+- Exhibit my health vitals snapshot.
+- What do my recent health indicators look like?
+- Display information about my well-being.
+- Present details on my health history.
+- Share insights into my health snapshot.
+- Illustrate my physiological data history.
+- Show me the latest snapshot of my vital signs.
+- Provide an overview of my health indicators chart.
+- Can you show me my physiological data snapshot?
+- Give me a snapshot of my health metrics trends.
+- Show me a summary of my vital signs trends.
+- Display my recent well-being snapshot.
+- Present a snapshot of my physiological measurements chart.
+- Share insights into my health metrics trends.
+- Exhibit my health conditions snapshot.
+- Illustrate my recent well-being metrics.
+- What is the status of my physiological data trends?
+- Provide details on my health snapshot.
+- Show me the latest snapshot of my health indicators.
+- Display information about my physiological data trends.
+- Give me an overview of my well-being history.
+- Can you display my health vitals trends?
+- Demonstrate my physiological measurements snapshot.
+- Share insights into my well-being trends.
+- Present a summary of my physiological data chart.
+- Illustrate my recent health conditions.
+- Show me a snapshot of my well-being metrics chart.
+- Provide an overview of my vital signs trends.
+- Exhibit my health snapshot.
+- What do my recent physiological measurements look like?
+- Display my health metrics history.
+- Can you show me my recent vital signs?
+- Give me a snapshot of my well-being indicators chart.
+- Share insights into my physiological data trends.
+- Present details on my vital signs snapshot.
+- Illustrate my recent health trends.
+- What is the status of my health conditions chart?
+- Provide an overview of my physiological measurements snapshot.
+show my recent history of medical record:
+- What does my most recent medical record reveal about my overall health?
+- Can you provide details about the recent tests and screenings documented in my medical history?
+- What information does my recent medical record contain regarding my current medications and prescriptions?
+- Are there any notable changes or updates in my recent medical history that I should be aware of?
+- Can you explain the results of the recent diagnostic tests mentioned in my medical records?
+- Are there any recommendations or follow-up actions based on my recent medical history?
+- What does my recent medical record indicate about my chronic conditions or ongoing health concerns?
+- Can you highlight any preventive care measures suggested in my recent medical records?
+- Are there specific areas of improvement mentioned in my recent medical history that I should focus on?
+- How frequently should I review my recent medical records to stay informed about my health?
+- Can you clarify any abbreviations or medical terminology used in my recent medical records?
+- Are there any upcoming appointments or scheduled procedures mentioned in my recent medical history?
+- Can you provide insights into the dates and details of my recent healthcare visits?
+- What does my recent medical record say about my lifestyle and its impact on my health?
+- Are there any vaccinations or immunizations recommended based on my recent medical history?
+- Can you explain the significance of the recent changes in my vital signs documented in my medical records?
+- What measures can I take to maintain or improve my health based on my recent medical history?
+- Are there any concerns or potential health risks highlighted in my recent medical records?
+- How can I access my complete medical history, including recent updates and changes?
+- Can you guide me on understanding the different sections of my recent medical records?
+- What information is available in my recent medical records regarding family medical history?
+- Are there any specific questions or concerns you recommend I discuss based on my recent medical history?
+- Can you provide details on any medications or treatments that were adjusted in my recent medical records?
+- How can I keep track of changes in my medical history and communicate them to healthcare providers?
+- Can you assist me in understanding the timelines and sequences of events mentioned in my recent medical records?
+- Are there any educational resources or additional information related to my recent medical history?
+- What steps can I take to actively participate in the management of my health based on my recent medical records?
+- Can you clarify the purpose and outcomes of recent laboratory tests mentioned in my medical history?
+- How can I ensure that my recent medical records are up-to-date and accurate?
+- Are there any lifestyle modifications or dietary changes recommended in light of my recent medical history?
+- What does my recent medical record indicate about my mental health and well-being?
+- Are there specific sections of my recent medical history that require immediate attention or follow-up?
+- How can I retrieve a copy of my recent medical records for personal reference or second opinions?
+- Can you recommend any tools or apps that can assist me in organizing and understanding my recent medical history?
+- What preventive measures can I incorporate into my lifestyle based on my recent medical records?
+- Are there any recent updates in my medical history that may impact my eligibility for certain treatments or procedures?
+- Can you provide information on how my recent medical records contribute to my overall care plan?
+- How do recent changes in my medical history align with my long-term health goals and objectives?
+- Can you assist me in identifying key trends or developments in my recent medical records?
+- What role does my recent medical history play in determining future healthcare interventions or screenings?
+- How can I advocate for myself and actively engage with my healthcare provider regarding my recent medical records?
+- Are there any potential side effects or considerations associated with recent medications listed in my medical history?
+- Can you provide a summary of key takeaways from my recent medical records in a patient-friendly format?
+- What steps should I take if I notice discrepancies or inaccuracies in my recent medical records?
+- How does my recent medical history contribute to the ongoing management of my chronic conditions?
+- Can you guide me on incorporating my recent medical history into my overall health and wellness plan?
+Feel free to customize these questions according to your specific needs and preferences.
+

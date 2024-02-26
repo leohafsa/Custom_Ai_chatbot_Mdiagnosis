@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Recorder</title>
+</head>
+<body>
+    
+    <button id="recordButton">Record Audio</button>
+    <button id="uploadButton">Upload Audio</button>
+
+    <div class="output"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            function loadContent(url) {
+                // Make an AJAX request to the specified URL
+                $.ajax({
+                    type: 'GET',
+                    url: url,
+                    data: {/* your data for the request */},
+                    success: function (data) {
+                        // Refresh the window and display the new HTML code
+                        location.reload();
+                      
+                        document.write(data);
+                    },
+                    error: function (error) {
+                        console.error("Error:", error);
+                    }
+                });
+            }
+
+            $('#recordButton').on('click', function () {
+                // Load content for /save-record
+                loadContent('/save-record');
+            });
+
+            $('#uploadButton').on('click', function () {
+                // Load content for /upload
+                loadContent('/upload');
+            });
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="h-screen flex flex-col">
+
+  <header class="flex justify-between items-center p-4 px-20">
+    <div class="font-bold text-2xl">
+      <img src="https://s3.us-east-2.amazonaws.com/www.ezshifa.com/Chatbot-aidoctor.ezshifa.com/logo+1.png" alt="Logo" class="h-10">
+    </div>
+
+    <div class="flex items-center space-x-4">
+      <div>Welcome, {{ first_name }}</div>
+      <select class="rounded-md p-2">
+        <option>English</option>
+        <option>Spanish</option>
+        <option>French</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="flex flex-1 flex-col md:flex-row">
+    <section class="flex p-8 items-center w-full md:w-1/2">
+      <div class="">
+        <img src="https://s3.us-east-2.amazonaws.com/www.ezshifa.com/Chatbot-aidoctor.ezshifa.com/logo-icon-1.png" alt="Image" class="mx-auto w-24 md:w-32">
+        <p class="text-4xl md:text-6xl text-center mt-4">
+          Welcome to <span class="text-purple-500 font-semibold">EZDiags</span>, an AI Doctor where you can ask
+          anything related to health!
+        </p>
+      </div>
+    </section>
+
+    <section class="flex-1 p-8">
+      <div class="border rounded-lg p-4 h-full flex flex-col">
+        <h2 class="font-bold mb-2 flex items-center">
+          <img src="https://www.freeiconspng.com/uploads/person-icon--icon-search-engine-3.png" class="w-6 h-6 mr-2 rounded-full">
+          {{ first_name }}
+        </h2>
+
+        <div class="messages flex flex-col space-y-2 mb-4 overflow-y-scroll flex-1">
+          <div class="sent flex justify-end">
+            <div class="bg-blue-500 text-white p-2 rounded-lg">
+              {{ user_input }}
+            </div>
+          </div>
+          <div class="received flex space-x-2">
+            <img src="https://s3.us-east-2.amazonaws.com/www.ezshifa.com/Chatbot-aidoctor.ezshifa.com/logo-icon-1.png" alt="Image" class="h-8">
+            <div class="bg-gray-200 text-gray-800 p-2 rounded-lg">
+              {{ bot_response }}
+            </div>
+          </div>
+        </div>
+        <form class="flex" method="post" action="{{ url_for('vitals_form') }}">
+          <input placeholder="{{label_text}}" class="flex-1 rounded-lg p-2 mr-2 border border-slate-300" type="text" id="message" name="message" required>
+          <button type="submit" class="btn bg-blue-500 text-white p-2 rounded-lg">Send</button> 
+      </form>   
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const chatHistory = [
+        { role: 'user', content: 'hello' },
+        { role: 'system', content: 'Hi im '},
+      ];
+
+function renderChat() {
+
+  const messagesDiv = document.querySelector('.messages');
+  let html = '';
+  coversation.forEach(message => {
+    if(message.role === 'user') {
+      html += `
+        <div class="sent flex justify-end">
+          <div class="bg-blue-500 text-white p-2 rounded-lg">
+            `{{user_input}}`
+          </div>
+        </div>
+      `;
+    } else if(message.role === 'system') {
+      html += `
+        <div class="received flex space-x-2">
+          <img src="https://s3.us-east-2.amazonaws.com/www.ezshifa.com/Chatbot-aidoctor.ezshifa.com/logo-icon-1.png" alt="Image" class="h-8">
+          <div class="bg-gray-200 text-gray-800 p-2 rounded-lg">
+            `{{bot_response}}`
+          </div>
+        </div>
+      `;
+    }
+  });
+
+  messagesDiv.innerHTML = html;
+}
+
+  </script>
+  
+</body>
+
+</html>

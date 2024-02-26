@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <p><strong>Patient:</strong>{{ user_input }}</p>
+    <p><strong>Chatbot:</strong>{{ bot_response }}</p>
+    <form method="post" action="{{ url_for('vitals_form') }}">
+        <label for="message">{{ label_text }}</label>
+        <input type="text" id="message" name="message" required>
+        <button type="submit">Send</button> 
+    </form>   
+</body>
+</html>
+
